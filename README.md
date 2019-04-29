@@ -6,6 +6,8 @@
 
 ```
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/master/init.sh
+or
+curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/init.sh
 
 chmod +x init.sh
 

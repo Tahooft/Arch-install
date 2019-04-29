@@ -2,15 +2,8 @@
 set -e
 
 echo "################################################################"
-echo "###############   Grubpacman -S     ##################"
-echo "################################################################"
-
-pacman -S grub
-grub-install /dev/sda
-grub-mkconfig -o /boot/grub/grub.cfg
-
-echo ""
 echo "###############    Set Where & When           ##################"
+echo "################################################################"
 echo ""
 
 ln -sf /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
@@ -36,7 +29,7 @@ echo "###############  Create  Sudo user th         ##################"
 echo ""
 
 useradd -m -g users -G wheel -s /bin/bash th
-cp -r bin/* /home/th/
+cp /root/0* /home/th/
 
 # ERROR - testen hoe de haakjes te echoe-en
 #echo %sudo ALL=(ALL) ALL >> /etc/sudoers
@@ -50,8 +43,31 @@ passwd root
 echo "Passwd for th"
 passwd th
 
+echo ""
+echo "###############   Grub                        ##################"
+echo ""
+pacman -S grub --noconfirm --needed
+grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
+echo ""
+echo "###############   Grub done                   ##################"
+echo ""
+echo "##############    Installing Networkmanager   ##################"
+echo ""
+
+sudo pacman -S networkmanager --noconfirm --needed
+
+echo ""
+echo "##############    Enabling Networkmanager      #################"
+echo ""
+
+sudo systemctl enable NetworkManager
+
+echo ""
 echo "################################################################"
-echo "###############    Configuring done           ##################"
+echo "##############     NetworkManager done         #################"
 echo "################################################################"
 echo ""
-echo "reboot"
+echo "Now you can safely exit and reboot."
+echo ""

@@ -24,12 +24,11 @@ curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/master/080-inst
 echo "################    copy Arch-install to bin  ##################"
 echo ""
 
-mkdir bin
-cp 0* bin
-chmod -r 755 bin
+chmod 755 0*
 
 echo ""
 echo "################################################################"
 echo "################    Ready to go               ##################"
 echo "################################################################"
 echo ""
+
