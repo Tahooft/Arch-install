@@ -7,7 +7,7 @@ echo "################################################################"
 
 # echo "exec startkde" > ~/.xinitrc
 
-sudo pacman -S plasma-desktop
+sudo pacman -S plasma-desktop --noconfirm --needed
 
 echo ""
 echo "##############    plasma-desktop installed     #################"
@@ -16,16 +16,16 @@ echo ""
 echo "###############    installing kde wanted      ##################"
 
 # kscreen for display resolution and multiple monitors and some basic packages:
-pacman -S kscreen konsole dolphin kate
+sudo pacman -S kscreen konsole dolphin kate --noconfirm --needed
 
 # Breeze theme
-pacman -S breeze-gtk breeze-kde4 kde-gtk-config
+sudo pacman -S breeze-gtk kde-gtk-config --noconfirm --needed
 
 # Networkmanager applet for Plasma
-pacman -S  plasma-nm
+sudo pacman -S  plasma-nm--noconfirm  --needed
 
 # Pulse audio
-pacman -S  plasma-pa
+sudo pacman -S  plasma-pa --noconfirm --needed
 
 echo ""
 echo "################################################################"

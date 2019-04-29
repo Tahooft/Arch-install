@@ -1,13 +1,14 @@
 #!/bin/bash
 set -e
 
+echo "################################################################"
+echo "###############   Grubpacman -S     ##################"
+echo "################################################################"
+
 pacman -S grub
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
-echo "################################################################"
-echo "###############    Configuring Arch linux     ##################"
-echo "################################################################"
 echo ""
 echo "###############    Set Where & When           ##################"
 echo ""
@@ -25,8 +26,7 @@ locale-gen
 echo "###############    Set hostname & hosts       ##################"
 echo ""
 
-# ERROR - DOES NOT MAKE THE FILE !!! ???
-echo thpc > /etc/hostname.
+echo thpc > /etc/hostname
 
 echo 127.0.0.1  localhost th >> /etc/hosts
 echo ::1        localhost >> /etc/hosts
@@ -35,8 +35,8 @@ echo 127.0.1.1  localhost.localdomain  th >> /etc/hosts
 echo "###############  Create  Sudo user th         ##################"
 echo ""
 
-pacman -S sudoer
 useradd -m -g users -G wheel -s /bin/bash th
+cp -r bin/* /home/th/
 
 # ERROR - testen hoe de haakjes te echoe-en
 #echo %sudo ALL=(ALL) ALL >> /etc/sudoers
@@ -45,11 +45,13 @@ nano /etc/sudoers
 
 echo "###############  Password root, th            ##################"
 echo ""
-
+echo "Passwd for root"
 passwd root
+echo "Passwd for th"
 passwd th
 
 echo "################################################################"
 echo "###############    Configuring done           ##################"
 echo "################################################################"
 echo ""
+echo "reboot"

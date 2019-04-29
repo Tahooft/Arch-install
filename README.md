@@ -1,4 +1,4 @@
-# bin/Arch-install
+# Arch-install
 
 ## Script to comfortably reinstall my system
 

@@ -68,5 +68,5 @@ echo ""
 
 
 arch-chroot /mnt
-
+cd /root
 ls -al

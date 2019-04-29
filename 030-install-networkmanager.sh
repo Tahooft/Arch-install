@@ -6,14 +6,14 @@ echo "##############    Installing Networkmanager    #################"
 echo "################################################################"
 echo ""
 
-pacman -S networkmanager
+sudo pacman -S networkmanager --noconfirm --needed
 
 echo ""
 echo "##############    Enabling Networkmanager      #################"
 echo ""
 
-systemctl enable NetworkManager
-systemctl start NetworkManager
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
 
 echo ""
 echo "################################################################"
