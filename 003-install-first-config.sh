@@ -1,14 +1,13 @@
 #!/bin/bash
 set -e
 
-echo "################################################################"
 echo "###############    Set Where & When           ##################"
-echo "################################################################"
 echo ""
 
 ln -sf /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
 hwclock --systohc --utc
 
+echo ""
 echo "###############    Set locale                 ##################"
 echo ""
 
@@ -16,6 +15,7 @@ echo ""
 echo en_US.UTF-8 UTF-8 >> /etc/locale.gen
 locale-gen
 
+echo ""
 echo "###############    Set hostname & hosts       ##################"
 echo ""
 
@@ -25,6 +25,7 @@ echo 127.0.0.1  localhost th >> /etc/hosts
 echo ::1        localhost >> /etc/hosts
 echo 127.0.1.1  localhost.localdomain  th >> /etc/hosts
 
+echo ""
 echo "###############  Create  Sudo user th         ##################"
 echo ""
 
@@ -36,6 +37,7 @@ cp /root/0* /home/th/
 #echo %wheel ALL=(ALL) ALL >> /etc/sudoers
 nano /etc/sudoers
 
+echo ""
 echo "###############  Password root, th            ##################"
 echo ""
 echo "Passwd for root"
@@ -51,11 +53,12 @@ grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
 echo ""
-echo "###############   Grub done                   ##################"
-echo ""
 echo "##############    Installing Networkmanager   ##################"
 echo ""
 
+# Moet misschien gestart in nieuwe shell na: su th
+cd /home/th/
+su th
 sudo pacman -S networkmanager --noconfirm --needed
 
 echo ""
@@ -66,7 +69,7 @@ sudo systemctl enable NetworkManager
 
 echo ""
 echo "################################################################"
-echo "##############     NetworkManager done         #################"
+echo "##############     All done                    #################"
 echo "################################################################"
 echo ""
 echo "Now you can safely exit and reboot."
