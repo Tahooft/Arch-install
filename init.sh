@@ -12,7 +12,6 @@ curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/005-ins
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/006-install-n-cores.sh
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/009-install-mirrors-optimized.sh
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/040-install-git.sh
-curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/041-setup-git.sh
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/050-install-xorg-ati.sh
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/050-install-xorg-vbox.sh
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/060-install-plasma-desktop.sh
@@ -21,7 +20,7 @@ curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/070-ins
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/080-install-lamp.sh
 
 chmod 755 0*
-
+# of?:  chmod +x 0*
 echo ""
 echo "################################################################"
 echo "################    Ready to go               ##################"

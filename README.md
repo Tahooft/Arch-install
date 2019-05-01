@@ -2,7 +2,7 @@
 
 ## Script to comfortably reinstall my system
 
-Inspired by: [Arcolinux Nemesis] (https://github.com/erikdubois/arcolinux-nemesis)
+Inspired by: [Arcolinux Nemesis](https://github.com/erikdubois/arcolinux-nemesis)
 
 ### Use after boot live cd: ###
 

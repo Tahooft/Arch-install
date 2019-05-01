@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-# or ?  set -o errexit
 
 timedatectl set-ntp true
 
@@ -40,13 +39,13 @@ echo ""
 genfstab -U /mnt >> /mnt/etc/fstab
 
 echo ""
-echo "##############     Copy 0*  to /mnt/root      #################"
+echo "##############     Copy 0*  to /mnt/root         #################"
 echo ""
 
 cp 0* /mnt/root/
 
 echo ""
-echo "##############     arch-chroot /mnt             #################"
+echo "##############     arch-chroot /mnt              #################"
 echo ""
 
 arch-chroot /mnt
@@ -57,5 +56,5 @@ echo "################################################################"
 echo "##############     All done                    #################"
 echo "################################################################"
 echo ""
-echo 
+echo
 echo ""

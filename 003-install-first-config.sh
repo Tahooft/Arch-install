@@ -56,16 +56,13 @@ echo ""
 echo "##############    Installing Networkmanager   ##################"
 echo ""
 
-# Moet misschien gestart in nieuwe shell na: su th
-cd /home/th/
-su th
-sudo pacman -S networkmanager --noconfirm --needed
+pacman -S networkmanager --noconfirm --needed
 
 echo ""
 echo "##############    Enabling Networkmanager      #################"
 echo ""
 
-sudo systemctl enable NetworkManager
+#systemctl enable NetworkManager
 
 echo ""
 echo "################################################################"
