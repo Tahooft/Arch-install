@@ -71,3 +71,4 @@ echo "################################################################"
 echo ""
 echo "Now you can safely exit and reboot."
 echo ""
+exit 0

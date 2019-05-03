@@ -28,8 +28,8 @@ echo "###              Configuring git                            ####"
 echo ""
 
 git init
-git config --global user.name "Taco Hooft"
-git config --global user.email "tahooft@gmail.com"
+git config --global user.name "Testing"
+git config --global user.email "testing@bouwsite1.ont"
 sudo git config --system core.editor nano
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=18000'

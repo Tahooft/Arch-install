@@ -22,7 +22,7 @@ sudo pacman -S kscreen konsole dolphin kate --noconfirm --needed
 sudo pacman -S breeze-gtk kde-gtk-config --noconfirm --needed
 
 # Networkmanager applet for Plasma
-sudo pacman -S  plasma-nm--noconfirm  --needed
+sudo pacman -S  plasma-nm --noconfirm  --needed
 
 # Pulse audio
 sudo pacman -S  plasma-pa --noconfirm --needed
