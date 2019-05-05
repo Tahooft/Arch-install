@@ -48,9 +48,6 @@ echo ""
 echo "##############     arch-chroot /mnt              #################"
 echo ""
 
-arch-chroot /mnt
-cd /root
-
 echo ""
 echo "################################################################"
 echo "##############     All done                    #################"
@@ -59,4 +56,6 @@ echo ""
 echo "You can start ./003-install-first-config.sh"
 echo ""
 echo ""
-exit 0
+
+arch-chroot /mnt
+cd /root

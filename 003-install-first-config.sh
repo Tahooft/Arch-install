@@ -70,5 +70,6 @@ echo "##############     All done                    #################"
 echo "################################################################"
 echo ""
 echo "Now you can safely exit and reboot."
+echo "Remember: NetworkManaged is not yet enabled!"
 echo ""
 exit 0

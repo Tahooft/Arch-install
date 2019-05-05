@@ -17,7 +17,7 @@ curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/050-ins
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/060-install-plasma-desktop.sh
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/061-install-display-manager.sh
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/070-install-kde-wanted.txt
-curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/080-install-lamp.sh
+# curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/080-install-lamp.sh
 
 chmod 755 0*
 # of?:  chmod +x 0*
