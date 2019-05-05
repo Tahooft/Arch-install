@@ -37,6 +37,6 @@ git config --global push.default simple
 
 echo ""
 echo "################################################################"
-echo "####                     Git configured                   ######"
+echo "####            GIT installed                                ###"
 echo "################################################################"
 echo ""

@@ -9,10 +9,6 @@ echo "################################################################"
 
 sudo pacman -S plasma-desktop --noconfirm --needed
 
-echo ""
-echo "##############    plasma-desktop installed     #################"
-echo ""
-
 echo "###############    installing kde wanted      ##################"
 
 # kscreen for display resolution and multiple monitors and some basic packages:

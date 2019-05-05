@@ -7,11 +7,9 @@ Inspired by: [Arcolinux Nemesis](https://github.com/erikdubois/arcolinux-nemesis
 ### Use after boot live cd: ###
 
 ```bash
-curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/master/init.sh
-or
-curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/develop/init.sh
+curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/master/001-fase-one.sh
 
-chmod +x init.sh
+chmod +x fase-one.sh
 
-./init.s
+./001-fase-one.sh
 ```

@@ -6,7 +6,7 @@ echo "###################   installing xorg     ######################"
 echo "################################################################"
 echo ""
 
-echo " Xserver setup"
+echo "Xserver setup"
 echo "Using the opensource driver for nvidia/ati"
 
 #sudo pacman -S xorg-server xorg-apps xorg-xinit xorg-twm xterm --noconfirm --needed
