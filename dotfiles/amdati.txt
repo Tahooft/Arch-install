@@ -1,0 +1,33 @@
+command: lspci -nnk | grep -i -EA3 "3d|display|vga"
+
+01:05.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] RS780L [Radeon 3000] [1002:9616]
+	Subsystem: ASRock Incorporation RS780L [Radeon 3000] [1849:9616]
+	Kernel driver in use: radeon
+	Kernel modules: radeon
+
+
+command: xdpyinfo | grep -B2 resolution
+
+screen #0:
+  dimensions:    3600x1200 pixels (952x317 millimeters)
+  resolution:    96x96 dots per inch
+
+
+Fonts
+Bitstream Vera Sans Mono 13pt
+
+        X.org amdgpu video driver    extra/xf86-video-ati 1:19.0.1-1 (xorg-drivers) [installed]
+        X.org dummy video driver     extra/xf86-video-fbdev 0.5.0-1 (xorg-drivers) [installed]
+        X.org SiS USB video driver   extra/xf86-video-vesa 2.4.0-2 (xorg-drivers xorg) [installed]
+
+
+Installed in Antergos
+
+    lib32-mesa
+    mesa
+    mesa-vdpau
+    xf86-input-libinput
+
+	xf86-video-ati
+    xf86-video-fbdev
+    xf86-video-vesa

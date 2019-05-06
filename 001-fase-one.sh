@@ -19,8 +19,8 @@ curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/master/061-inst
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/master/070-install-kde-wanted.sh
 # curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/master/080-install-lamp.sh
 
-chmod 755 0*
-# of?:  chmod +x 0*
+# chmod 755 0*
+
 echo ""
 echo "#############      Ready to go                 #################"
 echo ""

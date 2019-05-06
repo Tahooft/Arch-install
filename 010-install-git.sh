@@ -36,7 +36,5 @@ git config --global credential.helper 'cache --timeout=18000'
 git config --global push.default simple
 
 echo ""
-echo "################################################################"
 echo "####            GIT installed                                ###"
-echo "################################################################"
 echo ""

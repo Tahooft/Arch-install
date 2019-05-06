@@ -3,7 +3,7 @@ set -e
 
 echo ""
 echo "################################################################"
-echo "###     Installing  aurutils                                 ###"
+echo "###     Installing  yay                                      ###"
 echo "################################################################"
 echo ""
 
@@ -14,13 +14,12 @@ if [ ! -d $BUILDS ]; then
 fi
 
 cd $BUILDS
-# Test of ~/.builds/aurutils exists
-if [ -d $BUILDS/aurutils ]; then
-   rm -Rf $BUILDS/aurutils
+# Test of ~/.builds/yay exists
+if [ -d $BUILDS/yay ]; then
+   rm -Rf $BUILDS/yay
 fi
-
-git clone https://aur.archlinux.org/aurutils.git
-cd aurutils
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -sicr
 
 echo ""
