@@ -9,7 +9,5 @@ Inspired by: [Arcolinux Nemesis](https://github.com/erikdubois/arcolinux-nemesis
 ```bash
 curl -LJO https://raw.githubusercontent.com/Tahooft/Arch-install/master/001-fase-one.sh
 
-chmod +x fase-one.sh
-
 ./001-fase-one.sh
 ```
